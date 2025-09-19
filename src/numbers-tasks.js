@@ -313,7 +313,7 @@ function getSumOfDigits(num) {
  *   15  => false
  */
 function isPowerOfTwo(num) {
-  return num !== 0 && (num && num - 1) === 0;
+  return Math.log2(num) % 1 === 0;
 }
 
 /**
@@ -556,7 +556,7 @@ function getIntegerPartNumber(number) {
  * 0.1, 0.2, 0.3 => 0.6
  */
 function getSumOfNumbers(x1, x2, x3) {
-  return x1 + x2 + x3;
+  return +(x1 + x2 + x3).toFixed(2);
 }
 
 /**
